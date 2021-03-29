@@ -14,6 +14,8 @@
 		790CF29026126FF800E38933 /* CarCollector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 790CF28E26126FF800E38933 /* CarCollector.xcdatamodeld */; };
 		790CF29226126FFB00E38933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790CF29126126FFB00E38933 /* Assets.xcassets */; };
 		790CF29526126FFB00E38933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790CF29326126FFB00E38933 /* LaunchScreen.storyboard */; };
+		790CF29E261276F700E38933 /* f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 790CF29D261276F700E38933 /* f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG */; };
+		790CF2A126127A3F00E38933 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790CF2A026127A3F00E38933 /* CarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		790CF29126126FFB00E38933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790CF29426126FFB00E38933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		790CF29626126FFB00E38933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		790CF29D261276F700E38933 /* f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG"; sourceTree = "<group>"; };
+		790CF2A026127A3F00E38933 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,12 @@
 		790CF28426126FF800E38933 /* CarCollector */ = {
 			isa = PBXGroup;
 			children = (
+				790CF29D261276F700E38933 /* f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG */,
 				790CF28526126FF800E38933 /* AppDelegate.swift */,
 				790CF28726126FF800E38933 /* SceneDelegate.swift */,
 				790CF28926126FF800E38933 /* ViewController.swift */,
 				790CF28B26126FF800E38933 /* Main.storyboard */,
+				790CF2A026127A3F00E38933 /* CarViewController.swift */,
 				790CF29126126FFB00E38933 /* Assets.xcassets */,
 				790CF29326126FFB00E38933 /* LaunchScreen.storyboard */,
 				790CF29626126FFB00E38933 /* Info.plist */,
@@ -127,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790CF29E261276F700E38933 /* f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG in Resources */,
 				790CF29526126FFB00E38933 /* LaunchScreen.storyboard in Resources */,
 				790CF29226126FFB00E38933 /* Assets.xcassets in Resources */,
 				790CF28D26126FF800E38933 /* Main.storyboard in Resources */,
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790CF2A126127A3F00E38933 /* CarViewController.swift in Sources */,
 				790CF28A26126FF800E38933 /* ViewController.swift in Sources */,
 				790CF28626126FF800E38933 /* AppDelegate.swift in Sources */,
 				790CF29026126FF800E38933 /* CarCollector.xcdatamodeld in Sources */,

@@ -1,24 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="84s-sS-R2s">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarCollector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="i8d-Sb-n9e">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wcq-BR-Kwr">
+                            <connections>
+                                <segue destination="XRs-cL-jgM" kind="show" id="EOk-p7-geZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="708.69565217391312" y="118.52678571428571"/>
+        </scene>
+        <!--Car View Controller-->
+        <scene sceneID="5Fr-NT-Kwp">
+            <objects>
+                <viewController id="XRs-cL-jgM" customClass="CarViewController" customModule="CarCollector" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NB1-zx-tul">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="1AW-Qw-29E">
+                                <rect key="frame" x="67" y="108" width="280" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="B3v-Qv-82e"/>
+                                    <constraint firstAttribute="width" constant="280" id="oR8-bj-7qR"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfX-WB-UMX">
+                                <rect key="frame" x="76" y="348" width="262.5" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwa-ab-9k6">
+                                <rect key="frame" x="192" y="402" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="XRs-cL-jgM" eventType="touchUpInside" id="eWO-Hb-vek"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Iq0-mg-tnC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gfX-WB-UMX" firstAttribute="centerX" secondItem="NB1-zx-tul" secondAttribute="centerX" id="29i-fW-jD3"/>
+                            <constraint firstItem="1AW-Qw-29E" firstAttribute="top" secondItem="Iq0-mg-tnC" secondAttribute="top" constant="20" id="LI4-50-UnJ"/>
+                            <constraint firstItem="gfX-WB-UMX" firstAttribute="width" secondItem="lwa-ab-9k6" secondAttribute="width" multiplier="8.75" id="MYy-qF-4Ks"/>
+                            <constraint firstItem="1AW-Qw-29E" firstAttribute="centerX" secondItem="NB1-zx-tul" secondAttribute="centerX" id="cHl-N7-K6S"/>
+                            <constraint firstItem="lwa-ab-9k6" firstAttribute="top" secondItem="gfX-WB-UMX" secondAttribute="bottom" constant="20" id="pAF-Sx-uDl"/>
+                            <constraint firstItem="lwa-ab-9k6" firstAttribute="centerX" secondItem="NB1-zx-tul" secondAttribute="centerX" id="rC0-Gn-cje"/>
+                            <constraint firstItem="gfX-WB-UMX" firstAttribute="top" secondItem="1AW-Qw-29E" secondAttribute="bottom" constant="40" id="sU3-je-EPe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gfa-ul-svg">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="ZEe-3a-yMZ">
+                                <connections>
+                                    <action selector="CameraTapped:" destination="XRs-cL-jgM" id="Ke0-bA-nIl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Photos" id="4Lc-eb-bjT">
+                                <connections>
+                                    <action selector="PhotosTapped:" destination="XRs-cL-jgM" id="W6m-pT-rnt"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="carImageView" destination="1AW-Qw-29E" id="5Ge-W8-1JE"/>
+                        <outlet property="titleTextField" destination="gfX-WB-UMX" id="fya-kr-UHi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNb-HM-e5U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0lR-o9-U0E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="84s-sS-R2s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LOP-tN-CZx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gxn-cH-ITo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyP-o9-OLv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201.44927536231884" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f8e21670-3e3a-45a8-8289-2dde3b888c91.JPG" width="1280" height="960"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
